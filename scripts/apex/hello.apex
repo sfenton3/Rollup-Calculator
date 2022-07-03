@@ -24,9 +24,20 @@ for(schema.SObjectType var : gdList){
     }
 }
 */
+
+/*
 Integer i = 1;
 for(String s : RollupCalculator.getParentObjects() ){
     system.debug(i + ' : ' + s);
     i++;
+}
+
+*/
+
+List<String> gd = RollupCalculator.getChildObjects('account');
+integer inc = 0;
+for( string s : gd){
+    system.debug(inc + '  ' + s);
+    inc++;
 }
 

@@ -1,7 +1,11 @@
 <template>
-    <lightning-combobox name="Parent Objects" label="Parent Objects" placeholder="none" value={value}
-        onchange={handleChange} options={statusOptions}>
+    <lightning-combobox name="Parent Object" label="Parent Objects" placeholder="none" value={valuep}
+        onchange={handleChange} options={parentOptions}>
     </lightning-combobox>
 
-    <p>Selected option: {value}</p>
+    <lightning-combobox name="Child Object" label="Child Objects" placeholder="none" value={valuec}
+        onchange={handleChange2} options={childOptions}>
+    </lightning-combobox>
+
+    <p>Selected option: {valuep}</p>
 </template>
